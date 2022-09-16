@@ -1,7 +1,14 @@
 import React from 'react'
+import {Routes, Route} from 'react-router-dom'
+import Authorization from './pages/Authorization'
+import Contacts from './pages/Contacts'
 
 export default function App() {
   return (
-    <div>App</div>
+    <Routes>
+      <Route path='/' element={ <Authorization />}/>
+      <Route path='/contacts' element={ <Contacts />}/>
+    </Routes>
+   
   )
 }
